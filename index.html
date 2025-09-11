@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amma Restaurant - Home</title>
+  
+</head>
+<body>
+  <link rel="stylesheet" href="cast.css">
+  <script src="script.js" defer></script>
+  <div class="set">
+    <h1>🍴 AMMA RESTAURANT 🍴</h1>
+    <h4>Damn tasty food awaits you</h4>
+  </div>
+
+  <div class="rose">
+    <div class="c1">
+      <img src="idly.jpeg" width="200" height="200">
+      <h3>Idly</h3>
+      <h3>Rate: ₹10</h3>
+         </div>
+
+    <div class="c1">
+      <img src="barota.jpeg" width="200" height="200">
+      <h3>Barota</h3>
+      <h3>Rate: ₹20</h3>
+      
+    </div>
+
+    <div class="c1">
+      <img src="dosa.jpeg" width="200" height="200">
+      <h3>Dosa</h3>
+      <h3>Rate: ₹15</h3>
+      
+    </div>
+
+    <div class="c1">
+      <img src="poori.jpeg" width="200" height="200">
+      <h3>Poori</h3>
+      <h3>Rate: ₹25</h3>
+      
+    </div>
+
+    <div class="c1">
+      <img src="sapathi.jpeg" width="200" height="200">
+      <h3>Chapathi</h3>
+      <h3>Rate: ₹30</h3>
+     
+    </div>
+  </div>
+  <div class="food">
+<form class="order-form" onsubmit="showSuccess(event)">
+
+    <h2>Food Order Form</h2>
+
+    <label for="name">Customer Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Mobile Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="food">Select Food:</label>
+    <select id="food" name="food" required>
+      <option value="">Choose Food</option>
+      <option value="idly">Idly - ₹10</option>
+      <option value="barota">Barota - ₹20</option>
+      <option value="dosa">Dosa - ₹15</option>
+      <option value="poori">Poori - ₹25</option>
+      <option value="chapathi">Chapathi - ₹30</option>
+    </select>
+
+    <label for="qty">Quantity:</label>
+    <input type="number" id="qty" name="qty" min="1" value="1" required>
+
+    <button type="submit">Order Now</button>
+    
+  </form>
+
+  </div>
+
+   <div id="successMessage" style="
+    display:none;
+    margin:20px auto;
+    width:350px;
+    padding:15px;
+    border-radius:10px;
+    background:#d4edda;
+    color:#155724;
+    font-weight:bold;
+    text-align:center;
+    border:1px solid #c3e6cb;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.2);
+  ">
+    Order Successfully Conformed!
+  </div>
+</body>
+</html>
